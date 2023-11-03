@@ -43,9 +43,12 @@ public class AzureAdApplication {
 	@Value("${spring.cloud.azure.active-directory.profile.tenant-id}")
 	private String tenantId;
 
+	@Value("${SampleKV}")
+	private String sampleKV;
+
 	@GetMapping("/welcome")
 	public String sayHi(){
-		return "Welcome from Azure Active Directory!";
+		return "Welcome from Azure Active Directory! Data from pipeline: " + sampleKV;
 	}
 
 	@GetMapping("/other")

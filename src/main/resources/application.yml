@@ -12,6 +12,8 @@ spring:
         secret:
           endpoint: https://<your-keyvault-name>.vault.azure.net/
 
+SampleKV: {SampleKV}
+
 server:
   port: 8080
   forward-headers-strategy: native
