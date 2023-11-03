@@ -1,0 +1,18 @@
+spring:
+  cloud:
+    azure:
+      active-directory:
+        enabled: true
+        profile:
+          tenant-id: 8a7519a5-30fa-41ef-affe-af680b4ce2a0
+        credential:
+          client-id: 45449214-9e41-4c25-a504-f1c5d02927ea
+          client-secret: d-B8Q~ClUiVPLJAQFDsLzSpcHeMbfx-rvEoYsdcX
+      keyvault:
+        secret:
+          endpoint: https://<your-keyvault-name>.vault.azure.net/
+
+server:
+  port: 8080
+  forward-headers-strategy: native
+  address: localhost
